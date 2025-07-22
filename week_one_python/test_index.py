@@ -11,8 +11,7 @@ class Index_test(unittest.TestCase):
         d = divide
         self.assertEqual(d(4,2) , 2)
         self.assertEqual(d(8,4) , 2)
-        zero_check = 0 
-        with self.assertRaises(ZeroDivisionError):
+        with self.assertRaises(ZeroDivisionError): # return 
             d(100/0)
 
         
